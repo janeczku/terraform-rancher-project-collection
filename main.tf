@@ -1,6 +1,6 @@
 # Create rancher cluster sync
 resource "rancher2_cluster_sync" "cluster_sync" {
-  cluster_id    = data.rancher2_cluster.cluster.id
+  cluster_id    = local.project_info.cluster_id
   wait_catalogs = local.project_info.wait_for_catalogs
 }
 
