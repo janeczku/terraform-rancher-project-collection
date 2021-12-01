@@ -1,7 +1,7 @@
 # Required variables
 variable "project" {
   type = object({
-    cluster_name             = string
+    cluster_id               = string
     name                     = string
     project_limit            = map(string)
     namespace_default_limit  = map(string)
