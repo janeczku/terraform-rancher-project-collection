@@ -7,7 +7,7 @@ locals {
 
   project_info = {
     prefix_resource   = !var.disable_prefix ? "${var.project.name}-" : ""
-    cluster_name      = var.project.cluster_name
+    cluster_id        = var.project.cluster_id
     disable_prefix    = var.disable_prefix
     wait_for_catalogs = var.wait_for_catalogs
     name              = var.project.name
